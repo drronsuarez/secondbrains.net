@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Second Brains Net — Networked, We Win</title>
+<meta name="description" content="Second Brains networked into a platform cooperative — a green marketplace where solar, wind, and geothermal power community-owned AI."/>
+<style>
+  :root {
+    --green-node:#2a8a46;
+    --gold:#ffe67e;
+    --link:#00c438;
+    --hero-bg:#f4f4f4;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#000;
+    color:#fff;
+    line-height:1.6;
+  }
+  header.topbar {
+    display:flex; align-items:center; gap:14px;
+    padding:16px 24px; background:#000;
+    border-bottom:1px solid #161616;
+  }
+  header.topbar img { height:48px; width:auto; }
+  header.topbar .wordmark { font-size:1.25rem; font-weight:700; letter-spacing:.04em; }
+  header.topbar .wordmark span { color:var(--green-node); }
+
+  /* HERO 16:9 */
+  .hero {
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    background:var(--hero-bg);
+    overflow:hidden;
+  }
+  .hero .mesh { position:absolute; inset:0; width:100%; height:100%; }
+  .hero .title {
+    position:absolute; inset:0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:0 5%;
+    pointer-events:none;
+  }
+  .hero .title h1 {
+    margin:0;
+    font-size:clamp(1.8rem,6vw,4.6rem);
+    font-weight:800;
+    line-height:1.05;
+    color:#0d3d1e;
+    text-shadow:0 2px 18px rgba(244,244,244,.95), 0 0 30px rgba(244,244,244,.9);
+  }
+  .hero .title h1 .net { color:var(--green-node); }
+  .hero .title h1 .wins {
+    display:inline-block;
+    background:var(--gold);
+    color:#0d3d1e;
+    padding:0 .22em; border-radius:.12em;
+    box-shadow:0 4px 14px rgba(0,0,0,.18);
+  }
+
+  /* CONTENT on black */
+  main {
+    max-width:820px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+  main h2 {
+    font-size:clamp(1.5rem,3.5vw,2.4rem);
+    line-height:1.2;
+    color:#fff;
+    margin:0 0 28px;
+  }
+  main h2 .gold { color:var(--gold); }
+  main p { font-size:1.075rem; margin:0 0 22px; color:#f2f2f2; }
+  main a { color:var(--link); text-decoration:none; border-bottom:1px solid rgba(0,196,56,.4); }
+  main a:hover { border-bottom-color:var(--link); }
+  .lede { font-size:1.2rem; color:#fff; }
+  .pull {
+    border-left:4px solid var(--gold);
+    padding:6px 0 6px 22px; margin:34px 0;
+    color:#fff; font-size:1.15rem; font-style:italic;
+  }
+  .cta {
+    display:inline-block; margin-top:14px;
+    background:var(--link); color:#000; font-weight:700;
+    padding:14px 26px; border-radius:8px; border:none;
+  }
+  .cta:hover { background:#00e642; }
+  .refs { margin-top:50px; padding-top:26px; border-top:1px solid #1c1c1c; font-size:.98rem; color:#cfcfcf; }
+  .refs a { color:var(--link); }
+  footer { padding:30px 24px 60px; text-align:center; color:#777; font-size:.9rem; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <img src="secondbrains.net-logo.png" alt="Second Brains Net logo"/>
+  <div class="wordmark">SECOND BRAINS<span>.NET</span></div>
+</header>
+
+<section class="hero">
+  <svg class="mesh" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A mesh network of brains connected by golden links">
+  <defs>
+    <symbol id="brain" viewBox="0 0 1200 1200"><path d="m987.84 652.8c2.4102-3.9883 4.543-8.1367 6.3945-12.414 24.375-57.617-7.5-123.58-19.105-144.38 4.1445-26.383 12.336-114.13-53.383-147.79v0.003906c-13.145-6.7773-27.066-11.926-41.457-15.34 12.02-65.156-18.148-110.98-54.055-126.94-8.1914-3.5742-16.902-5.8086-25.801-6.6172-0.28125-0.26172-0.41406-0.61719-0.73047-0.88281-65.625-52.613-133.39-72.301-177.19-51.32v0.003906c-8.6328 4.1328-16.301 10.027-22.52 17.305-6.2109-7.2812-13.875-13.18-22.5-17.324-43.762-20.945-111.66-1.332-177.19 51.32-0.32031 0.26172-0.44922 0.61719-0.73047 0.88281v-0.003906c-8.9023 0.79297-17.617 3.0312-25.801 6.6172-35.906 15.957-66.074 61.875-54.055 126.94-14.391 3.4141-28.312 8.5625-41.457 15.34-65.625 33.656-57.523 121.41-53.383 147.79-11.605 20.812-43.574 86.773-19.105 144.38v-0.003906c1.8477 4.2773 3.9844 8.4258 6.3945 12.414-24.289 28.398-31.633 67.578-19.277 102.84 9.1055 31.938 29.258 59.602 56.871 78.055-5.4297 40.605 7.082 81.562 34.273 112.2 17.543 21.465 42.027 36.137 69.227 41.492 9.5547 22.383 25.617 41.375 46.105 54.512 20.484 13.137 44.449 19.812 68.773 19.156 7.1484-0.011719 14.289-0.48047 21.375-1.4062 44.391-2.8984 85.051-25.84 110.48-62.344 25.41 36.531 66.07 59.504 110.48 62.418 7.0859 0.92578 14.227 1.3945 21.375 1.4062 24.324 0.65234 48.285-6.0234 68.773-19.16 20.484-13.137 36.547-32.125 46.105-54.508 27.199-5.3555 51.684-20.027 69.227-41.492 27.191-30.641 39.703-71.598 34.273-112.2 27.625-18.473 47.781-46.168 56.871-78.133 12.355-35.258 5.0195-74.426-19.258-102.82zm-503.08 369.73c-78.414 9.8828-98.082-51.336-100.01-58.258-1.1562-4.3359-3.832-8.1133-7.5352-10.645-3.707-2.5312-8.1992-3.6523-12.66-3.1523-20.797-1.7148-39.836-12.34-52.219-29.141-22.844-25.844-31.461-61.297-23.023-94.742 1.3203-5.1953 0.35547-10.711-2.6562-15.148s-7.7773-7.3711-13.094-8.0625c-9.7305-1.2734-34.707-25.012-44.738-58.461v-0.003906c-7.3789-21.172-4.2617-44.59 8.4023-63.094 24.391 18.793 53.031 31.301 83.398 36.414 6.4883 1.1602 13.109-1.168 17.441-6.1367 4.332-4.9688 5.7344-11.844 3.6992-18.113-2.0391-6.2695-7.2148-11.008-13.641-12.48-46.574-9.5625-76.125-28.293-87.805-55.668-21.227-49.762 19.648-115.65 20.082-116.25l-0.003906-0.003906c2.5859-4.1523 3.4727-9.1406 2.4766-13.93-0.1875-0.88281-18.02-88.125 32.477-114.02 39.375-20.195 78.469-20.457 107.08-0.67578h-0.003906c13.18 9.6016 23.516 22.586 29.906 37.582 6.3945 15 8.6133 31.445 6.4141 47.602-0.73828 6.6602 2.1289 13.211 7.5273 17.184 5.4023 3.9727 12.508 4.7617 18.648 2.0703 6.1406-2.6875 10.379-8.4492 11.117-15.109 2.957-22.902-0.34375-46.172-9.5547-67.344-9.2109-21.176-23.988-39.453-42.758-52.902-19.578-13.41-42.664-20.785-66.395-21.207-9.5078-46.668 8.7578-78.469 31.613-88.633 27.414-12.168 58.949 3.4297 82.293 40.727 3.5586 5.6953 9.8828 9.0586 16.594 8.8242 6.707-0.23047 12.785-4.0273 15.938-9.9531 3.1523-5.9297 2.9023-13.09-0.65625-18.781-12.746-21.902-31.297-39.859-53.605-51.883 49.426-32.363 90.656-38.344 111.84-28.219 6.918 3.9258 12.508 9.8281 16.051 16.949 3.5469 7.1211 4.8828 15.141 3.8438 23.027v178.84c-1.7617-1.4062-3.4688-2.9258-5.3242-4.1797-18.73-13.289-42.961-16.055-64.199-7.332-4.75 1.7617-8.582 5.3711-10.629 10-2.0469 4.6328-2.1328 9.8984-0.23828 14.594s5.6094 8.4258 10.297 10.344c4.6875 1.9141 9.9531 1.8516 14.594-0.17578 9.7148-3.9727 20.801-2.5469 29.195 3.75 17.371 13.766 27.141 34.984 26.305 57.133v318.75c-3.0195-2.7383-6.1328-5.3984-9.375-7.8945-21.031-17.695-49.047-24.711-75.938-19.012-6.4336 1.8711-11.379 7.0352-12.977 13.543-1.5938 6.5078 0.40234 13.371 5.2422 18.008 4.8359 4.6367 11.781 6.3398 18.215 4.4688 15.52-2.0625 31.172 2.668 42.957 12.973 18.734 13.059 30.473 33.965 31.875 56.758v59.492c0 0.69531-2.625 69.676-96.488 81.582zm486.49-277.61c-10.031 33.449-35.008 57.188-44.738 58.461v0.003906c-5.3164 0.69141-10.082 3.625-13.094 8.0625-3.0078 4.4375-3.9766 9.9531-2.6562 15.148 8.4375 33.445-0.17969 68.898-23.023 94.742-12.387 16.797-31.422 27.418-52.219 29.141-4.4414-0.5-8.918 0.60547-12.617 3.1172-3.6992 2.5078-6.3789 6.2578-7.5586 10.57-1.875 7.0312-21.656 68.383-100.03 58.367-93.938-11.906-96.562-80.887-96.562-81.582v-543.19c-0.77344-9.1797 2.5273-18.234 9.0195-24.77 11.449-7.8477 25.332-11.328 39.129-9.8047 6.6602 0.75391 13.215-2.1016 17.195-7.4922 3.9844-5.3906 4.7891-12.492 2.1094-18.637-2.6758-6.1445-8.4258-10.391-15.086-11.145-17.918-1.5781-35.941 1.4414-52.367 8.7734v-113.79c-1.0312-7.8945 0.31641-15.918 3.875-23.039 3.5586-7.125 9.1602-13.02 16.094-16.938 21.188-10.125 62.418-4.1445 111.84 28.219-22.305 12.031-40.855 29.984-53.605 51.883-3.5586 5.6914-3.8086 12.852-0.65625 18.781 3.1562 5.9258 9.2305 9.7227 15.938 9.9531 6.7109 0.23438 13.035-3.1289 16.594-8.8242 23.363-37.293 54.883-52.895 82.293-40.727 22.855 10.164 41.117 41.961 31.613 88.633-23.762 0.40625-46.883 7.7812-66.488 21.207-18.77 13.449-33.547 31.727-42.758 52.902-9.2109 21.172-12.512 44.441-9.5547 67.344 0.55078 4.9453 3.043 9.4688 6.9258 12.578 3.8867 3.1055 8.8477 4.543 13.793 3.9961 4.9453-0.55078 9.4688-3.043 12.578-6.9258 3.1094-3.8867 4.5469-8.8477 3.9961-13.793-2.207-16.164 0.007812-32.625 6.4062-47.633 6.3984-15.008 16.742-28.004 29.934-37.605 28.613-19.781 67.668-19.52 107.08 0.67578 50.492 25.855 32.664 113.14 32.477 114.02h-0.003906c-0.99609 4.7891-0.10938 9.7773 2.4766 13.93 0.42969 0.65625 41.25 66.543 20.082 116.25-11.68 27.375-41.25 46.105-87.805 55.668h-0.003906c-4.9727 0.89062-9.375 3.75-12.211 7.9297-2.832 4.1836-3.8633 9.3281-2.8516 14.277 1.0078 4.9492 3.9727 9.2812 8.2227 12.016 4.2461 2.7344 9.418 3.6406 14.34 2.5078 30.352-5.1172 58.98-17.625 83.363-36.41 12.719 18.496 15.879 41.945 8.5117 63.148zm-294.99-196.18c-5.2852-4.1289-7.9609-10.766-7.0273-17.402 0.9375-6.6406 5.3438-12.277 11.562-14.785 6.2148-2.5117 13.301-1.5117 18.582 2.6172 38.062 29.719 71.605 38.98 99.75 27.562 35.812-14.551 57.301-60.637 62.664-99.863 0.91016-6.6367 5.293-12.285 11.496-14.816 6.207-2.5273 13.289-1.5586 18.582 2.5508 5.293 4.1094 7.9922 10.73 7.082 17.367-6.3359 46.258-32.605 107.93-85.727 129.51h0.003906c-6.6055 2.6289-13.469 4.5586-20.477 5.7539 1.6758 7.8203 5.3398 15.078 10.633 21.074 12.406 11.621 29.07 17.578 46.031 16.465 6.6953 0.0625 12.852 3.6953 16.148 9.5273 3.293 5.8359 3.2266 12.98-0.17969 18.75-3.4023 5.7695-9.6289 9.2852-16.328 9.2227h-0.33594c-27.512 1.1992-54.227-9.3945-73.445-29.121-11.301-12.992-18.48-29.055-20.625-46.141-28.863-6.1562-55.781-19.297-78.391-38.27zm175.86 268.76c-0.070312 4.9258-2.0742 9.6289-5.5859 13.09-3.5078 3.457-8.2383 5.3984-13.164 5.3984h-0.1875c-12.832 0.13672-25.566 2.2031-37.781 6.1289-0.32031 0.13281-0.65625 0.20703-0.99219 0.32031h-0.003906c-14.824 4.3633-28.406 12.168-39.637 22.781-16.035 17.004-24.402 39.832-23.156 63.168 0 6.6992-3.5742 12.891-9.375 16.238-5.8008 3.3516-12.949 3.3516-18.75 0-5.8008-3.3477-9.375-9.5391-9.375-16.238-1.418-33.469 11.051-66.039 34.465-90 12.195-11.785 26.594-21.047 42.375-27.262 1.8906-26.289-5.2852-52.438-20.328-74.082-18.609-21.34-45.426-33.75-73.742-34.125-4.957-0.41406-9.543-2.7812-12.754-6.5781-3.2109-3.7969-4.7812-8.7148-4.3633-13.672 0.35547-4.9727 2.7031-9.5977 6.5117-12.816 3.8047-3.2227 8.7539-4.7734 13.719-4.3008 38.902 0.98828 75.484 18.715 100.37 48.637 18.328 25.152 28.18 55.484 28.125 86.605 8.293-1.3906 16.68-2.1484 25.09-2.2695 4.9766 0.054687 9.7266 2.0859 13.203 5.6445 3.4766 3.5586 5.3984 8.3555 5.3398 13.332zm-530.55-345c-0.79297-6.5781 1.9375-13.086 7.1914-17.121s12.246-4.9961 18.398-2.5352c6.1484 2.4648 10.539 7.9922 11.555 14.539 5.3984 39.242 26.867 85.332 62.719 99.863 28.125 11.438 61.668 2.1562 99.711-27.543v-0.003906c5.293-3.8906 12.238-4.7266 18.305-2.2031 6.0664 2.5234 10.371 8.0352 11.344 14.531 0.97266 6.5-1.5234 13.031-6.5859 17.223-22.586 18.961-49.477 32.094-78.316 38.25-2.125 17.094-9.3086 33.16-20.625 46.145-19.219 19.723-45.934 30.32-73.445 29.137h-0.33594c-6.6992 0.0625-12.926-3.4531-16.328-9.2227-3.4062-5.7656-3.4727-12.914-0.17969-18.75 3.2969-5.832 9.4531-9.4648 16.148-9.5273 17.086 1.1367 33.867-4.9258 46.277-16.727 5.1758-5.9453 8.7695-13.105 10.441-20.812-7.0195-1.1914-13.895-3.1211-20.512-5.7539-53.137-21.582-79.406-83.27-85.762-129.49zm129.38 386.42c23.422 23.957 35.898 56.527 34.48 90 0 6.6992-3.5742 12.891-9.375 16.238-5.8008 3.3516-12.949 3.3516-18.75 0-5.8008-3.3477-9.375-9.5391-9.375-16.238 1.2461-23.34-7.1289-46.172-23.176-63.168-21.949-18.539-49.66-28.871-78.391-29.23h-0.17187c-6.6953 0.054688-12.914-3.4727-16.312-9.2461-3.3945-5.7734-3.4531-12.922-0.14844-18.75 3.3008-5.8281 9.4648-9.4492 16.164-9.5039 8.4141 0.035157 16.812 0.78125 25.105 2.2305-0.035156-31.102 9.8125-61.41 28.125-86.551 24.879-29.949 61.465-47.715 100.39-48.75 6.6797-0.55469 13.148 2.4922 16.969 8 3.8203 5.5039 4.4141 12.633 1.5547 18.695-2.8594 6.0586-8.7305 10.137-15.41 10.691-28.316 0.39062-55.125 12.812-73.727 34.164-15.023 21.652-22.188 47.793-20.305 74.082 15.773 6.2383 30.172 15.512 42.375 27.301z"/></symbol>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#f4f4f4"/>
+  <g class="edges"><line x1="150" y1="120" x2="340" y2="95" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="340" y1="95" x2="560" y2="150" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="560" y1="150" x2="720" y2="100" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="720" y1="100" x2="940" y2="130" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="940" y1="130" x2="1120" y2="210" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="150" y1="120" x2="90" y2="320" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="90" y1="320" x2="250" y2="420" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="340" y1="95" x2="430" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="560" y1="150" x2="430" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="250" y1="420" x2="430" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="1120" y1="210" x2="1180" y2="360" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="1180" y1="360" x2="1120" y2="210" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="1180" y1="360" x2="1120" y2="520" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="1120" y1="520" x2="990" y2="470" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="990" y1="470" x2="1030" y2="640" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="1030" y1="640" x2="840" y2="620" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="840" y1="620" x2="700" y2="660" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="700" y1="660" x2="610" y2="600" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="610" y1="600" x2="360" y2="640" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="360" y1="640" x2="90" y2="320" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="160" y1="600" x2="360" y2="640" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="560" y1="560" x2="610" y2="600" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="560" y1="560" x2="430" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="720" y1="100" x2="900" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="940" y1="130" x2="900" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="900" y1="300" x2="1180" y2="360" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="900" y1="300" x2="990" y2="470" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="560" y1="560" x2="700" y2="660" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="250" y1="420" x2="160" y2="600" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="560" y1="150" x2="900" y2="300" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="1120" y1="520" x2="1120" y2="210" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="150" y1="120" x2="250" y2="420" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="360" y1="640" x2="560" y2="560" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="840" y1="620" x2="1030" y2="640" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="430" y1="300" x2="560" y2="560" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="900" y1="300" x2="1120" y2="520" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="720" y1="100" x2="560" y2="150" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+<line x1="90" y1="320" x2="150" y2="120" stroke="#ffe67e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/></g>
+  <g class="nodes"><use href="#brain" x="132" y="102" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="322" y="77" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="542" y="132" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="702" y="82" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="922" y="112" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="1102" y="192" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="72" y="302" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="232" y="402" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="1162" y="342" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="1102" y="502" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="142" y="582" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="342" y="622" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="592" y="582" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="542" y="542" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="822" y="602" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="1012" y="622" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="972" y="452" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="682" y="642" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="412" y="282" width="36" height="36" fill="#2a8a46"/>
+<use href="#brain" x="882" y="282" width="36" height="36" fill="#2a8a46"/></g>
+</svg>
+  <div class="title">
+    <h1>Our <span class="net">SECOND BRAINS NET</span> <span class="wins">Wins</span></h1>
+  </div>
+</section>
+
+<main>
+  <h2>Our Second Brains Networked <span class="gold">will never be defeated</span></h2>
+
+  <p class="lede">One brain can be outspent. A network of them, owned by the people who use them, cannot be bought out, shut off, or extracted from.</p>
+
+  <p>In the 1930s, the big power companies looked at America's farmlands and did the math: stringing wire to scattered homesteads would never pay like wiring a city. So they simply didn't. Rural families were left in the dark while downtowns glowed — not because the technology was missing, but because the profit wasn't there for anyone but the incumbents.</p>
+
+  <p>The farmers didn't wait to be rescued. They formed <strong>rural electric cooperatives</strong> — pooling their own money, digging their own poles, and bringing electricity to the countryside themselves. Member-owned, locally governed, and answerable to the people they served rather than to distant shareholders, those co-ops still power much of rural America today. When the giants wouldn't build, communities built it themselves and kept it.</p>
+
+  <p class="pull">We are doing the same thing for the age of AI.</p>
+
+  <p>Second Brains Net is building a <strong>platform cooperative</strong> — see <a href="https://platform.coop" target="_blank" rel="noopener">platform.coop</a> — to promote a <strong>green marketplace</strong> where <span style="color:var(--gold)">solar, wind, and geothermal</span> provide the energy for community-owned compute. Instead of renting intelligence from a hyperscale giant in the next county that drinks the local water and exports the value, communities own the infrastructure outright and keep the benefit at home.</p>
+
+  <p>That's the model behind <a href="https://podcoin.ai/the-data-center-your-community-can-actually-own/" target="_blank" rel="noopener">the data center your community can actually own</a>: a solar-powered stack of small, low-watt machines running open-weight models, owned and governed locally — the cooperative playbook applied to compute instead of copper wire. Each node is a second brain. Networked together through a platform cooperative, they become something the incumbents can't defeat.</p>
+
+  <a class="cta" href="https://podcoin.ai/the-data-center-your-community-can-actually-own/" target="_blank" rel="noopener">See how communities own their compute →</a>
+
+  <div class="refs">
+    <p><strong>Learn more</strong></p>
+    <p>Watch: <a href="https://youtu.be/zjrSoXtlunU?si=K_eJvqxVD-555WVn" target="_blank" rel="noopener">Building a second brain (YouTube)</a></p>
+    <p>Read: <a href="https://docs.google.com/document/d/1U7PwfMIexXNW162Dh-mVw_Arx0cu-5_yGMN1EGKyd64/edit?usp=sharing" target="_blank" rel="noopener">Asking my second brain — with citations (Google Doc)</a></p>
+    <p>Cooperative model: <a href="https://platform.coop" target="_blank" rel="noopener">platform.coop</a></p>
+  </div>
+</main>
+
+<footer>© 2026 Second Brains Net — a platform cooperative in formation.</footer>
+
+</body>
+</html>
